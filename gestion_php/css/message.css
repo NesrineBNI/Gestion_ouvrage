@@ -1,0 +1,66 @@
+#form{
+  position: relative;
+}
+/* #form #email{
+  width: 300px;
+  outline: none;
+  background: transparent;
+  border: navajowhite;
+  padding: 12px;
+  
+} */
+/* #form .indicator{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  background: #555;
+  border-radius: 50%;
+} */
+/* #form #text{
+    color: red;
+} */
+.icon {
+  position: absolute;
+  left: 44%;
+}
+
+.errorMessage {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+#text{
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+  padding: 5px;
+  font-size: 15px;
+}
+/* #form #inputBox{
+  position: relative;
+}
+#form.invalid #inputBox::before{
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background-image: url("images/invalid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+#form.valid #inputBox::before{
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background-image: url("images/valid.png");
+  background-size: cover;
+  z-index: 1000;
+} */
+
+
