@@ -54,10 +54,18 @@ if(!isset($admin_id)){
 </li>
 
 <li class="nav-item">
+  <a class="nav-link" href="Emprunt.php">
+  <i class="fas fa-fw fa-cog"></i>
+    <span>Emprunt</span></a>
+</li>
+
+<li class="nav-item">
   <a class="nav-link" href="admin_profil.php">
   <i class="fas fa-solid fa-user"></i>
     <span>Admin Profil</span></a>
 </li>
+
+
 
 
 <!-- Divider -->

@@ -17,7 +17,6 @@ include('navbaradmin.php');
   <div class="card-body">
 
   <?php
-//  $itemCode = "";
 
 $select ="SELECT * FROM `Reservation` WHERE `valid_admin` = 0";
 $result = $conn->query($select);
