@@ -17,7 +17,6 @@ include("config.php");
 
 <div class="w-50 mt-5 container p-3 border border-white text-center">
     <?php
-    // SELECT * FROM `borrowings` WHERE `Nickname` = AND `Borrowing_Return_Date`
 
     $sqlname ="SELECT * FROM `Adhérent` WHERE `Email` = '$_SESSION[Email]'";
     $rusltname =$conn->query($sqlname);

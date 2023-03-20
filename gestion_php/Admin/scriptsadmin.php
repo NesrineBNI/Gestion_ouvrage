@@ -18,8 +18,6 @@
 
   <?php
 
-
-// $connection = mysqli_connect("localhost","root","","adminpanel");
 include('../config.php');
 if(isset($_POST['add'])){
 
@@ -37,8 +35,7 @@ if(isset($_POST['add'])){
    $dateAch = filter_var($dateAch, FILTER_SANITIZE_STRING);
    $num = $_POST['num'];
    $num = filter_var($num, FILTER_SANITIZE_STRING);
-//    $cpass = md5($_POST['cpass']);
-//    $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
+
 
    $image = $_FILES['image_']['name'];
    $image_tmp_name = $_FILES['image_']['tmp_name'];
@@ -50,13 +47,9 @@ if(isset($_POST['add'])){
    if($select->rowCount() > 0){
       $message[] = 'titre ouvrage already exist!';
    }else{
-    //   if($pass != $cpass){
-    //      $message[] = 'confirm password not matched!';
-    //   }
         if($image_size > 2000000){
          $message[] = 'image size is too large!';
         }
-    //   else{
          $insert = $conn->prepare("INSERT INTO `Ouvrage`(Titre, Auteur, Image_, Etat,Type,Date_d_édition,Date_d_achat,Nombre_de_pages) VALUES(?,?,?,?,?,?,?,?)");
          $insert->execute([$titre, $auteur,$image,$etat,$type,$date, $dateAch, $num]);
          if($insert){
@@ -64,7 +57,6 @@ if(isset($_POST['add'])){
             $message[] = 'registered succesfully!';
             header('location:admin_page.php');
          }
-    //   }
    }
 
 }

@@ -5,16 +5,6 @@ include '../config.php';
 
 if(isset($_POST["edit"])){
 
-
-    // $imgLink = "";
-
-    // if($_POST["images"]== NULL){
-    //     $imgLink = $_POST["imageslink"];
-    // }else{
-    //     $imgLink = $_POST["images"];
-
-    // };
-
     function valideLinkeImage(){
 
         if($_POST["uploaded_img"]== NULL){
@@ -28,9 +18,6 @@ $valideLinkeImage = valideLinkeImage();
 
 $id =  $_POST["edit"];
 
-
-// $id =  $_POST["updata"];
-
 try{
 
     $update = "UPDATE `Ouvrage` SET `Titre`='$_POST[titre]',`Image_`='$valideLinkeImage',
@@ -43,7 +30,6 @@ try{
     catch(PDOException $e) {
         die('error :'.$e->getMessage());
     }
-    
     
 };
 

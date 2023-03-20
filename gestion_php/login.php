@@ -76,8 +76,6 @@ if(isset($_POST['login'])){
                     The Books
                 </a>
 
-                <!-- <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a> -->
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -92,18 +90,6 @@ if(isset($_POST['login'])){
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="index.php#section_2">About</a>
                         </li>
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_3">Artists</a>
-                        </li> -->
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
-                        </li> -->
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_5">Pricing</a>
-                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="index.php#section_3">Contact</a>
@@ -137,47 +123,14 @@ if(isset($_POST['login'])){
                                 }
                             }
                             ?>
-                            <div class="ticket-form-body">
+                            <div class="form-body">
                                 <div class="row">
-                                    <!-- <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="ticket-form-name" id="ticket-form-name"
-                                            class="form-control" placeholder="Full name" required>
-                                    </div> -->
-
-                                    <!-- <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="email" name="ticket-form-email" id="ticket-form-email"
-                                            pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address"
-                                            required>
-                                    </div> -->
+                                   
                                 </div>
 
-                                        <input type="text" name="Nickname" id="form-name"
-                                        class="form-control" placeholder="Nickname"
-                                        required>
-
-                                <!-- <h6>Choose Ticket Type</h6> -->
-
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <!-- <div class="form-check form-control">
-                                            <input class="form-check-input" type="radio" name="TicketForm"
-                                                id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Eary bird $120
-                                            </label>
-                                        </div> -->
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <!-- <div class="form-check form-check-radio form-control">
-                                            <input class="form-check-input" type="radio" name="TicketForm"
-                                                id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Standard $240
-                                            </label>
-                                        </div> -->
-                                    </div>
-                                </div>
+                                    <input type="text" name="Nickname" id="form-name"
+                                    class="form-control" placeholder="Nickname"
+                                    required>
 
                                 <input type="password" id="form-password"
                                     class="form-control"
@@ -185,15 +138,13 @@ if(isset($_POST['login'])){
                                     name="mot_de_passe"
                                     required>
 
-                                <!-- <textarea name="ticket-form-message" rows="3" class="form-control"
-                                    id="ticket-form-message" placeholder="Additional Request"></textarea> -->
-
                                 <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                     <button type="submit" class="form-control" name="login">Login</button>
                                 </div>
                                 <div class="container mt-4">
                                     <p><strong>Create an account</strong> <a href="register.php">Register</a>.</p>
                                 </div>
+
                             </div>
                         </form>
                     </div>
@@ -263,18 +214,6 @@ if(isset($_POST['login'])){
                             <a href="#" class="site-footer-link">About</a>
                         </li>
 
-                        <!-- <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Artists</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Schedule</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Pricing</a>
-                        </li> -->
-
                         <li class="site-footer-link-item">
                             <a href="#" class="site-footer-link">Contact</a>
                         </li>
@@ -323,7 +262,6 @@ if(isset($_POST['login'])){
 
                     <div class="col-lg-3 col-12 mt-5">
                         <p class="copyright-text">Copyright © 2023 The Books</p>
-                        <!-- <p class="copyright-text">Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p> -->
                     </div>
 
                     <div class="col-lg-8 col-12 mt-lg-5">

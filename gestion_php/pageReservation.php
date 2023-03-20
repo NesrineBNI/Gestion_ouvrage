@@ -56,7 +56,6 @@ include("config.php");
                     <strong>Retour:</strong>
                     <a href="Adhérent_page.php" style="text-decoration: none;">Retour</a>
                 </p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </form>
             </div>
             </div>
@@ -67,7 +66,6 @@ include("config.php");
     <?php
         };
     };
-    // include("Reservation.php");
     ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

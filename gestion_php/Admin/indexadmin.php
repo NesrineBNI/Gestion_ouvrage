@@ -102,13 +102,6 @@ include('navbaradmin.php');
 
   <!-- Content Row -->
 
-
-
-
-
-
-
-
   <?php
 include('scriptsadmin.php');
 include('footeradmin.php');

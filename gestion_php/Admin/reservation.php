@@ -11,9 +11,6 @@ include('navbaradmin.php');
 <div class="card shadow mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Admin 
-            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">
-              Add Ouvrage 
-            </button> -->
     </h6>
   </div>
 
@@ -33,35 +30,15 @@ if($result->rowCount() > 0){
         $limitdate = $row['Date_limite'];
 ?>
 
-<?php
-
-
-// $select ="SELECT * FROM borrowings WHERE valiid_return = 0";
-// $result = $db->query($select);
-// if($result->rowCount() > 0){
-//     while($row = $result->fetch()) {
-
-//         $Borrowing_Code = $row['Borrowing_Code'];
-//         $itemCode = $row['Item_Code'];
-//         $Nickname = $row['Nickname'];
-//         $Borrowing_Date = $row['Borrowing_Date'];
-//         $Borrowing_Return_Date = $row['Borrowing_Return_Date'];
-//         $Reservation_Code = $row['Reservation_Code'];
-
-// ?>
-
     <div class="table-responsive">
 
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
           <tr>
-            <!-- <th> ID </th> -->
             <th>Nickname</th>
             <th>Title</th>
             <th>Reservation Date </th>
             <th>Date limite</th>
-            <!-- <th>type</th>
-            <th>Status</th> -->
             <th>Acceptance</th>
             <th>Reject</th>
           </tr>
@@ -78,25 +55,16 @@ if($result->rowCount() > 0){
             <?php
                 }
             ?>
-            <!-- <td> <img style="height: 80px;" src="uploaded_img/" alt="image"></td> -->
             <td> <?php echo $resedate ?></td>
             <td> <?php echo $limitdate ?></td>
-            <!-- <td></td> -->
             <form action="" method="POST">
             <td>
-                    <!-- <input type="hidden" name="edit_id" value=""> -->
                 <button type="submit" class="btn btn-success" name="btnAccept">
                 Acceptance
                 </button>
-                    <!-- <button  type="submit" name="edit_btn" class="btn btn-success" value=""> EDIT</button> -->
             </td>
             <td>
-            
                 <button type="submit" name='btnReject'  class="btn btn-danger">To Reject</button>
-                            
-            
-               
-                  <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete<?php echo $row['Code_d_ouvrage']?>"> DELETE</button> -->
             </td>
             </form>
           </tr>

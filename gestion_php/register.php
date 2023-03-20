@@ -40,9 +40,6 @@
        $pass = md5($_POST['mot_de_passe']);
        $pass = filter_var($pass, FILTER_SANITIZE_STRING);
 
-    //    $penalite = 0;
-    //    $admin = 'Adhérent_type';
-
 
        $valueFullName = $nom;
        $valueAddress = $adresse;
@@ -50,13 +47,7 @@
        $valueDate = $date;
        $valuePassword = $_POST["mot_de_passe"];
        $valueType = $type;
-    //    $cpass = md5($_POST['cpass']);
-    //    $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
-    
-    //    $image = $_FILES['image']['name'];
-    //    $image_tmp_name = $_FILES['image']['tmp_name'];
-    //    $image_size = $_FILES['image']['size'];
-    //    $image_folder = 'uploaded_img/'.$image;
+  
     
        $selectNickname = $conn->prepare("SELECT * FROM `Adhérent` WHERE Nickname = ? ");
        $selectNickname->execute([$nick]);
@@ -129,9 +120,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Lato:wght@300;400&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> -->
-
-
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -154,8 +142,6 @@
                     The Books
                 </a>
 
-                <!-- <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a> -->
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -170,18 +156,6 @@
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="index.php#section_2">About</a>
                         </li>
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_3">Artists</a>
-                        </li> -->
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
-                        </li> -->
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_5">Pricing</a>
-                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="index.php#section_3">Contact</a>
@@ -202,18 +176,7 @@
                     <div class="col-lg-6 col-10 mx-auto">
                         <form class="custom-form ticket-form mb-5 mb-lg-0" action="" method="POST" id="form">
                             <h2 class="text-center mb-4">Get Register Here</h2>
-                            <?php
-                            // if(isset($message)){
-                            //     foreach($message as $message){
-                            //         echo '
-                            //         <div class="message">
-                            //             <span  style="color: red">'.$message.'</span>
-                            //             <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
-                            //         </div>
-                            //         ';
-                            //     }
-                            // }
-                            ?>
+                        
                             <div class="ticket-form-body">
                                 <div class="row">
                                     
@@ -251,10 +214,6 @@
                                 <input type="number" class="form-control" name="téléphone"
                                     placeholder="Ph 085-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                     required value="<?php echo $valuePhone?>">
-                                    
-
-
-                                <!-- <h6>Choose Ticket Type</h6> -->
 
                                 <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
@@ -361,18 +320,6 @@
                             <a href="#" class="site-footer-link">About</a>
                         </li>
 
-                        <!-- <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Artists</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Schedule</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Pricing</a>
-                        </li> -->
-
                         <li class="site-footer-link-item">
                             <a href="#" class="site-footer-link">Contact</a>
                         </li>
@@ -421,7 +368,6 @@
 
                     <div class="col-lg-3 col-12 mt-5">
                         <p class="copyright-text">Copyright © 2023 The Books</p>
-                        <!-- <p class="copyright-text">Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p> -->
                     </div>
 
                     <div class="col-lg-8 col-12 mt-lg-5">

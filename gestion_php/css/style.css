@@ -317,34 +317,6 @@ strong {
   color: var(--white-color);
 }
 
-
-/*---------------------------------------
-  VIDEO              
------------------------------------------*/
-/* .video-wrap {
-  z-index: -100;
-} */
-
-/* .custom-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-} */
-
-
-/*---------------------------------------
-  SITE HEADER              
------------------------------------------*/
-/* .site-header {
-  background-color: var(--primary-color);
-  padding-top: 12px;
-  padding-bottom: 12px;
-} */
-
-
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
@@ -490,52 +462,6 @@ strong {
   height: 100%;
 }
 
-
-/*---------------------------------------
-  ABOUT              
------------------------------------------*/
-/* .about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
-  background-color: #704010;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.about-image {
-  border-radius: var(--border-radius-medium);
-  display: block;
-}
-
-.about-text-wrap {
-  position: relative;
-}
-
-.about-text-icon {
-  background: var(--primary-color);
-  border-radius: 100%;
-  font-size: var(--h3-font-size);
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  text-align: center;
-}
-
-.about-text-info {
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(5px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: var(--border-radius-medium);
-  border: 1px solid rgba(209, 213, 219, 0.3);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 20px;
-  padding: 35px;
-} */
-
-
 /*---------------------------------------
   TICKET               
 -----------------------------------------*/
@@ -627,146 +553,6 @@ strong {
 .artists-hover hr {
   margin: 1.5rem 0;
 }
-
-
-/*---------------------------------------
-  SCHEDULE              
------------------------------------------*/
-/* .schedule-section {
-  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
-  background-color: #242424;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.table-responsive {
-	filter: drop-shadow(2px 2px 4px #606060);
-}
-
-.schedule-table {
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-}
-
-.schedule-table .bg-warning {
-  background: #f0a5a5 !important;
-}
-
-.schedule-table thead th {
-  background-color: var(--secondary-color);
-}
-
-.schedule-table th,
-.schedule-table tr,
-.schedule-table td {
-  border-bottom-color: #363a3e;
-  padding: 30px;
-}
-
-.schedule-table tr:last-child th,
-.schedule-table tr:last-child td {
-  border-bottom-color: transparent;
-}
-
-.schedule-table thead th {
-  border-right: 1px solid #c7460a;
-  border-bottom-color: transparent;
-}
-
-.schedule-table th + td {
-  border-bottom: 0;
-}
-
-.schedule-table thead th:last-child {
-  border-right-color: transparent;
-}
-
-.schedule-table .pop-background-image {
-  background-image: url('../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg');
-}
-
-.schedule-table .rock-background-image {
-  background-image: url('../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg');
-}
-
-.schedule-table .country-background-image {
-  background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
-}
-
-.table-background-image-wrap {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: none;
-  position: relative;
-}
-
-.schedule-table h3,
-.schedule-table p {
-  color: var(--white-color);
-  position: relative;
-  z-index: 2;
-} */
-
-
-/*---------------------------------------
-  PRICING              
------------------------------------------*/
-/* .pricing-thumb {
-  border: 5px dotted var(--dark-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  padding: 50px;
-}
-
-.pricing-thumb h3 small {
-  display: inline-block;
-  font-size: var(--p-font-size);
-  margin-right: 15px;
-}
-
-.pricing-list {
-  column-count: 2;
-  padding-left: 20px;
-}
-
-.pricing-list-item {
-  line-height: normal;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.pricing-tag {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px;
-}
-
-.pricing-tag span {
-  font-size: 180%;
-  line-height: normal;
-}
-
-.pricing-thumb .link-fx-1 {
-  color: var(--primary-color);
-}
-
-.pricing-thumb .link-fx-1:hover {
-  color: var(--link-hover-color);
-} */
 
 
 /*---------------------------------------
@@ -954,23 +740,7 @@ strong {
   .hero-section {
     padding-top: 150px;
   }
-/* 
-  .pricing-thumb {
-    padding: 35px;
-  } */
-/* 
-  .schedule-table h3 {
-    font-size: 22px;
-  }
 
-  .schedule-table th {
-    padding: 20px;
-  }
-
-  .schedule-table tr, 
-  .schedule-table td {
-    padding: 25px;
-  } */
 
   .ticket-section {
     padding-top: 130px;

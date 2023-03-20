@@ -58,7 +58,6 @@ if (isset($user_id)) {
                 <a class="navbar-brand" href="index.html">
                     The Books
                 </a>
-                <!-- <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a> -->
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,13 +72,6 @@ if (isset($user_id)) {
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_2">Books</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Artists</a>
-                        </li> -->
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_3">Contact</a>
                         </li>
@@ -114,9 +106,7 @@ if (isset($user_id)) {
 
                         <h1 class="text-white mb-5">The Books NB</h1>
                         <h2 class=" mb-5" style="color:orangered">Adhérent Page</h2>
-                        <!-- <a class="btn custom-btn smoothscroll" href="login.php">LOGIN</a> -->
-
-                                <!-- <label class="form-label text-center" for="form1">Search</label> -->
+                
                             <form action="" method="post" class="input-group">
                                 <input type="search" name="inpSearch" id="form1" class="form-control" placeholder="Search...">
                                 <button type="submit" name="btnSearch" class="btn btn-warning w-25">
@@ -124,15 +114,6 @@ if (isset($user_id)) {
                                 </button>
                             </form>
                             
-                       
-                        <!-- <div class="mb-3">
-                            <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-                            
-                        </div>
-                        <button type="button" class="btn btn-warning">
-                                <i class="fas fa-search"></i>
-                            </button> -->
 
                     </div>
 
@@ -227,100 +208,10 @@ if (isset($user_id)) {
                             </div>
                         </div>
 
-                        <!-- <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/test.jpg"
-                                    class="artists-image img-fluid">
-                            </div>
-
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Titre:</strong>
-                                    Deer Man
-                                </p>
-
-                                <p>
-                                    <strong>Auteur:</strong>
-                                    Geoffroy Delorme
-                                </p>
-
-                                <p>
-                                    <strong>Status:</strong>
-                                    Reserved
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Login for reservation:</strong>
-                                    <a href="login.php"> Get Login Here</a>
-                                </p>
-                            </div>
-                        </div> -->
+                       
                     </div>
 
-                    <!-- <div class="col-lg-5 col-4">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/crime.jpg"
-                                    class="artists-image img-fluid">
-                            </div>
-
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Titre:</strong>
-                                    Crime
-                                </p>
-
-                                <p>
-                                    <strong>Auteur:</strong>
-                                    Denis Yates
-                                </p>
-
-                                <p>
-                                    <strong>Status:</strong>
-                                    Reserved
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Login for reservation:</strong>
-                                    <a href="login.php">Get Login Here</a>
-                                </p>
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/crime.jpg"
-                                    class="artists-image img-fluid">
-                            </div>
-
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Titre:</strong>
-                                    SAUTE-LA-PUCE
-                                </p>
-
-                                <p>
-                                    <strong>Auteur:</strong>
-                                    Feb 20, 1988
-                                </p>
-
-                                <p>
-                                    <strong>Status:</strong>
-                                    Reserved
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Login for reservation:</strong>
-                                    <a href="login.php">Get Login Here</a>
-                                </p>
-                            </div>
-                        </div> -->
+                  
                         <?php 
                         };
                     }
@@ -440,7 +331,6 @@ if (isset($user_id)) {
 
                     <div class="col-lg-3 col-12 mt-5">
                         <p class="copyright-text">Copyright © 2023 The Books</p>
-                        <!-- <p class="copyright-text">Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p> -->
                     </div>
 
                     <div class="col-lg-8 col-12 mt-lg-5">

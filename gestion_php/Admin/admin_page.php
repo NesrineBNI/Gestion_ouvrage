@@ -111,19 +111,15 @@ include('navbaradmin.php');
             <td> <?php echo $row["Type"] ?></td>
             <td> <?php echo $row["Status"] ?></td>
             <td>
-                    <!-- <input type="hidden" name="edit_id" value=""> -->
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#edit<?php echo $row['Code_d_ouvrage']?>">
                 EDIT
                 </button>
-                    <!-- <button  type="submit" name="edit_btn" class="btn btn-success" value=""> EDIT</button> -->
             </td>
             <td>
             <form action="" method="POST" class="d-flex gap-3">
                             <button type="submit" name='btnDelete' value="<?php echo $row["Code_d_ouvrage"]?>" class="btn btn-danger">DELETE</button>
                             <?php include("deleteAdmin.php"); ?>
             </form>
-               
-                  <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete<?php echo $row['Code_d_ouvrage']?>"> DELETE</button> -->
             </td>
           </tr>
         <?php 
