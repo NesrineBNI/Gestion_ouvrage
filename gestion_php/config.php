@@ -1,6 +1,6 @@
 <?php
 
-$db_name = "mysql:host=localhost;dbname=GestionOuv";
+$db_name = "mysql:host=localhost;dbname=Nis";
 $username = "root";
 $password = "";
 
