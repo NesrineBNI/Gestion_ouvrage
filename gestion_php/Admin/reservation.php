@@ -125,11 +125,7 @@ if(isset($_POST["btnReject"])){
         $conn->query($sql);
         // $result = $db->exec($sql);
 
-
-
 }
-
-
 
 ?>
 

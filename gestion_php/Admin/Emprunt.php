@@ -69,27 +69,25 @@ if($result->rowCount() > 0){
             if(isset($_POST['btnValid'])){
                 $id = $_POST['btnValid'];
                 $sqlborr = "SELECT * FROM `emprunt` WHERE `Emprunt_Code`='$id' ";
-                $resultborr = $db->query($sqlborr);
+                $resultborr = $conn->query($sqlborr);
                 while($rowborr = $resultborr->fetch()) {
                     $Nickname = $rowborr['Nickname'];
                     $Borrowing_Return_Date = $rowborr['Date_de_retour'];
                 }
                 $sqladh = "SELECT * FROM `Adhérent` WHERE `Nickname`= '$Nickname'";
-                $resultadh = $db->query($sqladh);
+                $resultadh = $conn->query($sqladh);
                 while($rowadh = $resultadh->fetch()) {
                     $Penalty = $rowadh['Nombre_penalite'];
                 }
                 echo  $Penalty ;
                     $sqlUp = "UPDATE `emprunt` SET `valiid_return`='1' WHERE `Emprunt_Code` = '$id'";
-                    $db->query($sqlUp);
+                    $conn->query($sqlUp);
         
                 $date = date("Y/m/d-H:i:s");
                 if($date < $Borrowing_Return_Date){
                     $sqlpn = "UPDATE `Adhérent` SET `Nombre_penalite`= $Penalty + 1 WHERE `Nickname`='$Nickname'";
-                    $db->query($sqlpn);
-                    echo "pnlti";
-                }else{
-                    echo "else";
+                    $conn->query($sqlpn);
+                    
                 }
         
             }
