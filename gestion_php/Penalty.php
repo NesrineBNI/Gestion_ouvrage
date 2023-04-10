@@ -18,7 +18,7 @@ include("config.php");
 <div class="w-50 mt-5 container p-3 border border-white text-center">
     <?php
 
-    $sqlname ="SELECT * FROM `Adhérent` WHERE `Email` = '$_SESSION[Email]'";
+    $sqlname ="SELECT * FROM `adhérent` WHERE `Email` = '$_SESSION[Email]'";
     $rusltname =$conn->query($sqlname);
     while($rowname = $rusltname->fetch()) {
         $Nickname = $rowname['Nickname'];

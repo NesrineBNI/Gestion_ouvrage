@@ -84,10 +84,10 @@ if($result->rowCount() > 0){
                     $conn->query($sqlUp);
         
                 $date = date("Y/m/d-H:i:s");
-                if($date < $Borrowing_Return_Date){
-                    $sqlpn = "UPDATE `Adhérent` SET `Nombre_penalite`= $Penalty + 1 WHERE `Nickname`='$Nickname'";
+                if($date > $Borrowing_Return_Date){
+                    $sqlpn = "UPDATE `Adhérent` SET `Nombre_penalite`= 'Nombre_penalite' + 1 WHERE `Nickname`='$Nickname'";
                     $conn->query($sqlpn);
-                    
+  
                 }
         
             }
